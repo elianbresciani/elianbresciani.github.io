@@ -1,0 +1,302 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+    margin:0;
+    padding:0;
+    font-family: monospace;
+    font-style: italic;
+    scroll-behavior: smooth;
+    animation: changeBg 10s infinite alternate linear;
+  }
+/* ACA EMPIEZA EL CONTENIDO PARA LA NAV*/
+  .logo {
+    position:relative;
+    top: 5%;  
+    width: 90px;
+  }
+  nav {
+    position: absolute;
+    top:5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ef32d9;
+    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);
+    background: linear-gradient(to right, #89fffd, #ef32d9);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    font-family: Verdana;
+    color: transparent;
+    font-size: 25px;
+    padding: 40px;
+  }
+  
+  nav ul li a {
+    background: transparent; 
+    padding: 5px;
+    text-decoration: none;
+    transition: color 1s ease;
+
+  }
+
+  .enlace {
+    color: white; /* Enlace sin visitar */
+  }
+  
+  .enlace:hover {
+    color: white; /* Enlace al pasar el mouse sobre él */
+  }
+  
+  .enlace:visited {
+    color: white; /* Enlace visitado */
+  }
+  .borde-nav {
+    border: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 300px;
+    width: 920px;
+    height: 100px;
+  }
+  /* ACA TERMINA EL CONTENIDO PARA LA NAV*/
+  /* ACA EMPIEZA EL COTENIDO PARA FOTO PRESENTACION, REDES */
+
+  .fondo {
+    background-image:url("imagenes/universo-fondo2.gif");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  .box{
+    border-radius: 1000px;
+    border: 3px solid;
+    position:static;
+    width: 400px;
+    border-color:white;
+    height: 480px;
+    padding-top: 15px;
+    background-image: url("imagenes/perfil.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }
+  .box:hover {
+    transform: translate(10px);
+
+  }
+  .box-foto{
+    border: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 10px;
+    width: 600px;
+    height: 700px;
+  }
+  .box-redes{
+    border: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 10px;
+    width: 180px;
+    height: 70px;
+  }
+  .btn {
+    background: #bc00fa;
+    background-image: -webkit-linear-gradient(top, #bc00fa, #039eff);
+    background-image: -moz-linear-gradient(top, #bc00fa, #039eff);
+    background-image: -ms-linear-gradient(top, #bc00fa, #039eff);
+    background-image: -o-linear-gradient(top, #bc00fa, #039eff);
+    background-image: linear-gradient(to bottom, #bc00fa, #039eff);
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 9px 19px 9px 17px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  .btn:hover {
+    transform: translateX(10px);
+  }
+  /* ACA TERMINA EL NAVBAR y LA FOTO PRESENTACION */
+  .icono {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  .icono:hover{
+    transform: translateX(3px);
+  }
+
+  .texto {
+    max-width: 600px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+  .espacio{
+    padding-top: 120px;
+  }
+
+  .apartado {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bloque {
+    background: #ef32d9;
+    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);
+    background: linear-gradient(to right, #89fffd, #ef32d9);
+    border-radius: 10px;
+    margin:10px;
+    width: 100%;
+    padding: 7%;
+  }
+
+  .box-bloque{
+    display: flex;
+
+    border: 6px solid;
+    position:static;
+    border-color:white;
+    border-radius: 20px;
+    width:30%;
+    padding: 0%;
+    animation: border-animation2 5s infinite;
+    margin:10px;
+  }
+
+  @keyframes border-animation2 {
+    0% { border-color: #b700ff;}
+    15% {border-color: #70009c;}
+    30% {border-color: #41005a;}
+    50% {border-color: #b703ff;}
+    65% {border-color: #6f019b;}
+    80% {border-color: #45015f;}
+    100% { border-color:#a322ff;}
+  }
+  .icono-skills {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+  }
+  .icono-skills:hover{
+    transform: translateX(3px);
+  }
+
+  @keyframes changeBg{
+    0% {background: #750085;}
+    33% {background: #75006f;}
+    66% {background: #3d003f;}
+    100% {background: #2e0020;}
+  }
+
+  .separador {
+    border-top: 3px solid #ffffff;
+  }
+  .seccion3 {
+    color:white;
+    background-image: url(imagenes/fondo-proyectos.gif);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  .redes{
+    width: 40px;
+    padding: 10px;
+    margin:10px;
+  }
+
+  .bloque-contacto {
+    width: 30%;
+    background: transparent;
+    border-radius: 0px;
+    margin:10px;
+    padding: 7%;
+  }
+  .icono-redes {
+    width: 30px;
+    transition: transform 0.3s ease;
+  }
+  .icono-redes:hover{
+    transform: translateX(3px);
+  }
+  .logo-final{
+    position:relative; 
+    width: 180px;
+  }
+
+  .flip-card {
+    display: flex;
+    border: 6px solid;
+    position:static;
+    border-color:transparent;
+    border-radius: 20px;
+    width:100%;
+    height: 450px;
+    
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+  .flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+  
+.flip-card-front {
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+.flip-card-back {
+    background: #ef32d9;
+    background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);
+    background: linear-gradient(to right, #89fffd, #ef32d9);
+    color: white;
+    transform: rotatey(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-card{
+  display: flex;
+  border: 6px solid;
+  position:static;
+  border-color:white;
+  border-radius: 20px;
+  width:550px;
+  padding: 0%;
+  animation: border-animation2 5s infinite;
+  margin:20px;
+}
+.flip-card-front img{
+  width:100%;
+  height: 450px;
+}
